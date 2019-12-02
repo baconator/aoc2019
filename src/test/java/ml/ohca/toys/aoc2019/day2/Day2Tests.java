@@ -1,6 +1,7 @@
 package ml.ohca.toys.aoc2019.day2;
 
 import ml.ohca.toys.aoc2019.common.Common;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -17,11 +18,11 @@ public class Day2Tests {
 
     @Test
     void testEasy() throws IOException {
-        System.out.println(day.easy(input));
+        Assertions.assertEquals(2782414, day.easy(input));
     }
 
     @Test
     void testHard() throws IOException {
-        System.out.println(day.hard(input));
+        Assertions.assertEquals(9820, day.hard(input));
     }
 }

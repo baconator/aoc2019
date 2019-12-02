@@ -18,7 +18,7 @@ class Day1Tests {
 
     @Test
     void testEasy() throws IOException {
-        System.out.println(day.easy(input));
+        Assertions.assertEquals(3325342, day.easy(input));
     }
 
     @Test
@@ -28,6 +28,6 @@ class Day1Tests {
 
     @Test
     void testHard() throws IOException {
-        System.out.println(day.hard(input));
+        Assertions.assertEquals(4985158, day.hard(input));
     }
 }
